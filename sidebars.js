@@ -12,16 +12,20 @@ module.exports = {
       "getting-started/authentication",
       "getting-started/connect-server-to-github",
       "getting-started/helm-chart",
+      "getting-started/workspace",
+      "getting-started/view-generated-code",
     ],
     "About": [
-        "about/product-roadmap",
-        "getting-started/phone-home",
+      "about/licensing",
+      "about/product-roadmap",
+      "getting-started/phone-home",
     ],
     "Generated API": [
       "getting-started/generated-app-api",
       "api/generated-api-sorting",
       "api/generated-api-filtering",
       "api/generated-api-pagination",
+      "api/meta-query-graphql",
     ],
     "How To": [
       "how-to/how-to-create-app",
@@ -30,6 +34,8 @@ module.exports = {
       "how-to/how-to-set-access-permissions",
       "how-to/how-to-commit-changes",
       "getting-started/relations",
+      "how-to/base-directories",
+      "how-to/api-admin-ui-settings",
     ],
     Tutorials: [
       {
@@ -63,13 +69,49 @@ module.exports = {
       "custom-code/add-business-logic",
       "custom-code/add-action-to-controller",
       "custom-code/add-graphql-query",
+      "custom-code/seed-db",
+      "custom-code/add-custom-dto",
+
     ],
-    "Errors and Resolutions": [
-      "errors/github-different-app-id",
-      "errors/invalid-code-generation-version",
-      "errors/merge-conflict",
-      "errors/missing-code-generation-version",
-      "errors/could-not-authorize-user",
+    Troubleshooting: [
+      {
+        type: "category",
+        label: "Code Generation",
+        items: [
+          "errors/invalid-code-generation-version",
+          "errors/missing-code-generation-version",
+        ],
+      },
+      {
+        type: "category",
+        label: "Authorization",
+        items: [
+          "errors/could-not-authorize-user",
+        ],
+      },
+      {
+        type: "category",
+        label: "GitHub",
+        items: [
+          "errors/merge-conflict",
+          "errors/github-different-app-id",
+        ],
+      },
+      {
+        type: "category",
+        label: "Set-Up",
+        items: [
+          "errors/installation-fails",
+          "errors/installation-slow",
+        ],
+      },
+      {
+        type: "category",
+        label: "DB",
+        items: [
+          "errors/prisma-denied-access-on-postgres",
+        ],
+      },
     ],
     Community: ["contributing", "community/handling-a-new-issue"],
   },

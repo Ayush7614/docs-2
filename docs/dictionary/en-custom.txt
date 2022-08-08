@@ -33,6 +33,7 @@ Kubernetes
 kubectl
 bitnami
 postgresql
+postgres
 Minikube
 Docker's
 Roadmap
@@ -64,3 +65,6 @@ Posthog
 httpclientmodule
 authservice
 tasksservice
+upsert
+dto
+transpilation
